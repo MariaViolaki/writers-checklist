@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Writer\'s Checklist</string>
+    <string name="question">Is your novel a masterpiece yet?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="submit">Submit Answers</string>
+    <string name="score">Your score is: %1$d%%</string>
+    <string name="unanswered_questions">Please answer all questions</string>
+
+    <string name="book_promotion">&#160;Book Promotion</string>
+    <string name="summary">1. I don\'t give much thought to the summary.</string>
+    <string name="promotion">2. How do you promote your book?</string>
+    <string name="promotion_professional">By having a professional do it</string>
+    <string name="promotion_spam">By asking random people to read it</string>
+    <string name="promotion_none">I don\'t promote it</string>
+    <string name="promotion_community">By engaging in writers\' communities</string>
+    <string name="cover">3. My book cover looks professional.</string>
+
+    <string name="technical_aspects">&#160;Technical Aspects</string>
+    <string name="edits">4. How do you edit your book?</string>
+    <string name="edits_editor">I hire an editor</string>
+    <string name="edits_none">I don\'t edit it</string>
+    <string name="edits_once">I edit it once</string>
+    <string name="edits_many">I edit it as much as possible</string>
+    <string name="rewrite">5. Rewrite this phrase: My books are my life said Rika</string>
+    <string name="phrase_hint">Write the correct phrase</string>
+    <string name="correct_phrase_one">\"My books are my life,\" said Rika.</string>
+    <string name="correct_phrase_two">\'My books are my life,\' said Rika.</string>
+    <string name="commitment">6. How often do you write?</string>
+    <string name="commitment_mood">It depends on my mood</string>
+    <string name="commitment_often">Regularly</string>
+    <string name="research">7. How much time do you dedicate to research?</string>
+    <string name="research_minute">A minute</string>
+    <string name="research_day">A day</string>
+    <string name="research_year">A year</string>
+
+    <string name="content_quality">&#160;Content Quality</string>
+    <string name="originality">8. How original is your book?</string>
+    <string name="originality_fanfiction">I write Fanfiction</string>
+    <string name="originality_cliches">I watch out for cliches</string>
+    <string name="originality_max">My plot and characters are unique</string>
+    <string name="originality_similar">My book is similar to others</string>
+    <string name="reason">9. Why do you write?</string>
+    <string name="reason_need">Because I need it</string>
+    <string name="reason_help">To inform or entertain people</string>
+    <string name="reason_fame">To become famous</string>
+    <string name="coherence">10. Is your writing coherent?</string>
+    <string name="coherence_rationality">Everything has a rational explanation</string>
+    <string name="coherence_flow">The flow from one sentence to the other is smooth</string>
+    <string name="coherence_none">I don\'t give much attention to detail</string>
+    <string name="coherence_liveliness">Everything is portrayed vividly</string>
+
+    <string name="tips">&#160;A few tips:</string>
+    <string name="tips_summary">
+        \u2022 A good summary gives the appropriate information so that a person starts reading.
+    </string>
+    <string name="tips_community">
+        \u2022 Helping other writers, reading and discussing about books helps readers find you.
+    </string>
+    <string name="tips_professional">
+        \u2022 Professionals promoting books can guarantee a degree of discoverability.
+    </string>
+    <string name="tips_cover">
+        \u2022 A good cover attracts a reader\'s attention and gives them an idea about the novel.
+    </string>
+    <string name="tips_editor">
+        \u2022 An editor can make your writing look professional and save you time editing on your own.
+    </string>
+    <string name="tips_edits">
+        \u2022 Editing your book multiple times helps you improve as a writer and minimizes mistakes.
+    </string>
+    <string name="tips_punctuation">
+        \u2022 Correct punctuation is a prerequisite for a professional writer and makes reading easier.
+    </string>
+    <string name="tips_frequency">
+        \u2022 Writing frequently helps you improve and maintain your interest in finishing a book.
+    </string>
+    <string name="tips_research">
+        \u2022 Aim for a good degree of research for your novel to be informed, inspired and focused.
+    </string>
+    <string name="tips_cliches">
+        \u2022 Stereotypes to be avoided can often be subconscious and considered as \"common sense\".
+    </string>
+    <string name="tips_originality">
+        \u2022 Writing something out of the ordinary makes your story interesting and helps it stand out.
+    </string>
+    <string name="tips_need">
+        \u2022 When writing becomes a need, it\'s an extra motivation to keep writing and improve.
+    </string>
+    <string name="tips_flow">
+        \u2022 A good flow from one sentence to another helps readers immerse themselves in the story.
+    </string>
+    <string name="tips_rationality">
+        \u2022 The absence of plot holes makes readers appreciate the novel and identify with the characters.
+    </string>
+    <string name="tips_liveliness">
+        \u2022 Liveliness of the scenes and dialogues makes the story more interesting and realistic.
+    </string>
+
+</resources>

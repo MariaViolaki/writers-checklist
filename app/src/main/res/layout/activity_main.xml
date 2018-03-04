@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="@dimen/small_space"
+    tools:context="com.example.android.writerschecklist.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/HeadingStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/medium_space"
+            android:text="@string/question" />
+
+        <TextView
+            style="@style/SubheadingStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/book_promotion" />
+
+        <View style="@style/ViewStyle" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/tiny_space"
+            android:text="@string/summary" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/summary_yes"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/summary_no"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/tiny_space"
+            android:paddingTop="@dimen/small_space"
+            android:text="@string/promotion" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/promotion_community"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/promotion_community" />
+
+            <RadioButton
+                android:id="@+id/promotion_none"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/promotion_none" />
+
+            <RadioButton
+                android:id="@+id/promotion_professional"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/promotion_professional" />
+
+            <RadioButton
+                android:id="@+id/promotion_spam"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/promotion_spam" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/tiny_space"
+            android:paddingTop="@dimen/small_space"
+            android:text="@string/cover" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/cover_yes"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/cover_no"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/SubheadingStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/medium_space"
+            android:text="@string/technical_aspects" />
+
+        <View style="@style/ViewStyle" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/tiny_space"
+            android:text="@string/edits" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/edits_editor"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edits_editor" />
+
+            <RadioButton
+                android:id="@+id/edits_many"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edits_many" />
+
+            <RadioButton
+                android:id="@+id/edits_none"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edits_none" />
+
+            <RadioButton
+                android:id="@+id/edits_once"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edits_once" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/tiny_space"
+            android:paddingTop="@dimen/small_space"
+            android:text="@string/rewrite" />
+
+        <EditText
+            android:id="@+id/punctuation_phrase"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phrase_hint" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/tiny_space"
+            android:paddingTop="@dimen/small_space"
+            android:text="@string/commitment" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/commitment_mood"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/commitment_mood" />
+
+            <RadioButton
+                android:id="@+id/commitment_often"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/commitment_often" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/tiny_space"
+            android:paddingTop="@dimen/small_space"
+            android:text="@string/research" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/research_minute"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/research_minute" />
+
+            <RadioButton
+                android:id="@+id/research_day"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/research_day" />
+
+            <RadioButton
+                android:id="@+id/research_year"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/research_year" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/SubheadingStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/medium_space"
+            android:text="@string/content_quality" />
+
+        <View style="@style/ViewStyle" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/tiny_space"
+            android:text="@string/originality" />
+
+        <CheckBox
+            android:id="@+id/originality_cliches"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/originality_cliches" />
+
+        <CheckBox
+            android:id="@+id/originality_fanfiction"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/originality_fanfiction" />
+
+        <CheckBox
+            android:id="@+id/originality_max"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/originality_max" />
+
+        <CheckBox
+            android:id="@+id/originality_similar"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/originality_similar" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/tiny_space"
+            android:paddingTop="@dimen/small_space"
+            android:text="@string/reason" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/reason_fame"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reason_fame" />
+
+            <RadioButton
+                android:id="@+id/reason_help"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reason_help" />
+
+            <RadioButton
+                android:id="@+id/reason_need"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reason_need" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/tiny_space"
+            android:paddingTop="@dimen/small_space"
+            android:text="@string/coherence" />
+
+        <CheckBox
+            android:id="@+id/coherence_flow"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coherence_flow" />
+
+        <CheckBox
+            android:id="@+id/coherence_none"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coherence_none" />
+
+        <CheckBox
+            android:id="@+id/coherence_rationality"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coherence_rationality" />
+
+        <CheckBox
+            android:id="@+id/coherence_liveliness"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coherence_liveliness" />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/huge_space"
+            android:layout_marginTop="@dimen/huge_space"
+            android:onClick="submitAnswers"
+            android:text="@string/submit" />
+
+        <LinearLayout
+            android:id="@+id/results_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/small_space"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/score"
+                style="@style/HeadingStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/medium_space"
+                android:textSize="@dimen/small_text"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/SubheadingStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/small_space"
+                android:text="@string/tips"
+                android:textSize="@dimen/small_text" />
+
+            <TextView
+                android:id="@+id/tips_summary"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_summary" />
+
+            <TextView
+                android:id="@+id/tips_community"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_community" />
+
+            <TextView
+                android:id="@+id/tips_professional"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_professional" />
+
+            <TextView
+                android:id="@+id/tips_cover"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_cover" />
+
+            <TextView
+                android:id="@+id/tips_editor"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_editor" />
+
+            <TextView
+                android:id="@+id/tips_edits"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_edits" />
+
+            <TextView
+                android:id="@+id/tips_punctuation"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_punctuation" />
+
+            <TextView
+                android:id="@+id/tips_frequency"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_frequency" />
+
+            <TextView
+                android:id="@+id/tips_research"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_research" />
+
+            <TextView
+                android:id="@+id/tips_cliches"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_cliches" />
+
+            <TextView
+                android:id="@+id/tips_originality"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_originality" />
+
+            <TextView
+                android:id="@+id/tips_need"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_need" />
+
+            <TextView
+                android:id="@+id/tips_flow"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_flow" />
+
+            <TextView
+                android:id="@+id/tips_rationality"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_rationality" />
+
+            <TextView
+                android:id="@+id/tips_liveliness"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_liveliness" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
